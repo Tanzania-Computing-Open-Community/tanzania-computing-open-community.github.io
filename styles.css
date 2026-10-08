@@ -16,8 +16,8 @@
     --color-surface-hover: #172b25;
 
     /* Borders */
-    --color-border: rgba(214, 226, 220, 0.10);
-    --color-border-strong: rgba(214, 226, 220, 0.18);
+    --color-border: rgba(214, 226, 220, 0.14);
+    --color-border-strong: rgba(214, 226, 220, 0.23);
 
     /* Tanzania-inspired identity */
     --color-green: #20a86b;
@@ -31,10 +31,10 @@
     --color-cyan: #55c7d9;
 
     /* Typography */
-    --color-text: #edf5f1;
-    --color-text-soft: #c3d0ca;
-    --color-text-muted: #91a39b;
-    --color-text-faint: #71817b;
+    --color-text: #f1f7f4;
+    --color-text-soft: #d0dbd6;
+    --color-text-muted: #a8b8b1;
+    --color-text-faint: #879891;
 
     /* Status */
     --color-success: #55d99a;
@@ -489,7 +489,7 @@ section {
 
     color: var(--color-green-light);
 
-    font-size: 0.78rem;
+    font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -1093,7 +1093,7 @@ section {
     top: 24px;
     right: 26px;
 
-    color: rgba(237, 245, 241, 0.055);
+    color: rgba(237, 245, 241, 0.16);
 
     font-family: var(--font-mono);
     font-size: 3rem;

@@ -10,12 +10,12 @@
 
     <meta
         name="description"
-        content="TCOSC — Tanzania Computing Open Source Community. A national computing community connecting learners, developers, researchers, educators and contributors through open source."
+        content="TCOSC — Tanzania Computing Open Source Community. Connecting Tanzania's computing community through open source, practical learning, development, research, collaboration, and contribution."
     >
 
     <meta
         name="keywords"
-        content="TCOSC, Tanzania Computing Open Source Community, Tanzania computing, open source Tanzania, software development, cybersecurity, computing students, research"
+        content="TCOSC, Tanzania Computing Open Source Community, Tanzania computing, open source Tanzania, computing students, software development, cybersecurity, research"
     >
 
     <meta
@@ -30,7 +30,7 @@
 
     <meta
         name="theme-color"
-        content="#0b1220"
+        content="#08110f"
     >
 
     <link
@@ -38,22 +38,20 @@
         href="https://tanzania-computing-open-community.github.io/"
     >
 
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
     <title>
         TCOSC | Tanzania Computing Open Source Community
     </title>
-
-    <!--
-        Visual styles will be introduced in styles.css.
-        JavaScript will be introduced separately only where
-        genuinely required.
-    -->
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <!-- =====================================================
-         SKIP NAVIGATION
+         ACCESSIBILITY
          ===================================================== -->
 
     <a
@@ -70,94 +68,87 @@
 
     <header class="site-header">
 
-        <div class="container header-inner">
+        <div class="container site-header__inner">
+
+            <!-- BRAND -->
 
             <a
                 class="site-brand"
                 href="index.html"
                 aria-label="TCOSC home"
             >
-                <span class="brand-mark" aria-hidden="true">
-                    TCOSC
+
+                <span
+                    class="site-brand__mark"
+                    aria-hidden="true"
+                >
+                    T
                 </span>
 
-                <span class="brand-name">
-                    Tanzania Computing Open Source Community
+                <span class="site-brand__text">
+
+                    <span class="site-brand__name">
+                        TCOSC
+                    </span>
+
+                    <span class="site-brand__descriptor">
+                        Tanzania Computing Open Source Community
+                    </span>
+
                 </span>
+
             </a>
 
+
+            <!-- PRIMARY NAVIGATION -->
 
             <nav
                 class="primary-navigation"
                 aria-label="Primary navigation"
             >
 
-                <ul class="navigation-list">
+                <a
+                    href="index.html"
+                    aria-current="page"
+                >
+                    Home
+                </a>
 
-                    <li>
-                        <a
-                            href="#about"
-                            class="navigation-link"
-                        >
-                            About
-                        </a>
-                    </li>
+                <a href="about.html">
+                    About
+                </a>
 
-                    <li>
-                        <a
-                            href="#communities"
-                            class="navigation-link"
-                        >
-                            Communities
-                        </a>
-                    </li>
+                <a href="communities.html">
+                    Communities
+                </a>
 
-                    <li>
-                        <a
-                            href="#learn"
-                            class="navigation-link"
-                        >
-                            Learn
-                        </a>
-                    </li>
+                <a href="learn.html">
+                    Learn
+                </a>
 
-                    <li>
-                        <a
-                            href="#projects"
-                            class="navigation-link"
-                        >
-                            Projects
-                        </a>
-                    </li>
+                <a href="projects.html">
+                    Projects
+                </a>
 
-                    <li>
-                        <a
-                            href="#research"
-                            class="navigation-link"
-                        >
-                            Research
-                        </a>
-                    </li>
+                <a href="research.html">
+                    Research
+                </a>
 
-                    <li>
-                        <a
-                            href="#community"
-                            class="navigation-link"
-                        >
-                            Community
-                        </a>
-                    </li>
+                <a href="community.html">
+                    Community
+                </a>
 
-                    <li>
-                        <a
-                            href="#contribute"
-                            class="navigation-link navigation-link-primary"
-                        >
-                            Contribute
-                        </a>
-                    </li>
+                <a href="contribute.html">
+                    Contribute
+                </a>
 
-                </ul>
+                <a
+                    href="https://github.com/tanzania-computing-open-community"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
             </nav>
 
@@ -178,50 +169,60 @@
              ================================================= -->
 
         <section
-            id="hero"
-            class="hero-section"
+            class="hero"
             aria-labelledby="hero-title"
         >
 
-            <div class="container hero-content">
+            <div class="container hero__content">
 
-                <p class="eyebrow">
-                    TANZANIA COMPUTING OPEN SOURCE COMMUNITY
+                <p class="hero__eyebrow">
+                    Tanzania Computing Open Source Community
                 </p>
 
                 <h1 id="hero-title">
                     Building Tanzania's computing future
-                    through open source.
+                    <span class="accent">
+                        through open source.
+                    </span>
                 </h1>
 
-                <p class="hero-description">
+                <p class="hero__lead">
                     TCOSC connects Tanzania's computing community
                     through practical learning, open-source
                     development, research, collaboration,
                     contribution, and mentorship.
                 </p>
 
-                <div class="hero-actions">
+
+                <div class="hero__actions">
 
                     <a
-                        href="#communities"
-                        class="button button-primary"
+                        href="communities.html"
+                        class="button button--primary"
                     >
                         Explore the Community
+                        <span
+                            class="button__arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
                     </a>
 
                     <a
-                        href="#contribute"
-                        class="button button-secondary"
+                        href="contribute.html"
+                        class="button button--secondary"
                     >
                         Start Contributing
+                        <span
+                            class="button__arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
                     </a>
 
                 </div>
-
-                <p class="hero-principle">
-                    Learn. Build. Share. Contribute.
-                </p>
 
             </div>
 
@@ -229,12 +230,11 @@
 
 
         <!-- =================================================
-             INTRODUCTION / WHY TCOSC
+             ABOUT / INTRODUCTION
              ================================================= -->
 
         <section
-            id="about"
-            class="section section-about"
+            class="section section--featured"
             aria-labelledby="about-title"
         >
 
@@ -242,7 +242,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         ABOUT TCOSC
                     </p>
 
@@ -254,11 +254,11 @@
                 </div>
 
 
-                <div class="about-grid">
+                <div class="intro-grid">
 
-                    <div class="about-primary">
+                    <div class="intro-copy">
 
-                        <p class="lead">
+                        <p>
                             Tanzania Computing Open Source Community
                             (TCOSC) is a national open computing
                             community built around knowledge,
@@ -276,27 +276,44 @@
                             help others grow.
                         </p>
 
-                    </div>
-
-
-                    <div class="about-purpose">
-
-                        <h3>
-                            Why TCOSC?
-                        </h3>
+                        <p>
+                            The community is designed to connect
+                            learners, developers, researchers,
+                            educators, institutions, contributors,
+                            and mentors through practical technical
+                            work.
+                        </p>
 
                         <p>
-                            Computing knowledge and practical
-                            experience should not remain isolated
-                            within individual classrooms,
-                            institutions, projects, or communities.
-                            TCOSC creates a space where knowledge and
-                            technical work can move between people,
-                            institutions, projects, and the wider
-                            open-source ecosystem.
+                            <a
+                                class="link"
+                                href="about.html"
+                            >
+                                Learn more about TCOSC →
+                            </a>
                         </p>
 
                     </div>
+
+
+                    <aside class="highlight-panel">
+
+                        <span class="highlight-panel__label">
+                            Our principle
+                        </span>
+
+                        <p class="highlight-panel__title">
+                            Learn. Build. Share. Contribute.
+                        </p>
+
+                        <p class="muted">
+                            Knowledge becomes more valuable when
+                            people use it, improve it, document it,
+                            and make it available for others to
+                            build upon.
+                        </p>
+
+                    </aside>
 
                 </div>
 
@@ -306,12 +323,11 @@
 
 
         <!-- =================================================
-             COMMUNITIES
+             COMMUNITIES PREVIEW
              ================================================= -->
 
         <section
-            id="communities"
-            class="section section-communities"
+            class="section"
             aria-labelledby="communities-title"
         >
 
@@ -319,7 +335,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         COMMUNITIES
                     </p>
 
@@ -344,36 +360,45 @@
 
                     <article class="community-card">
 
-                        <div
-                            class="card-index"
+                        <span
+                            class="community-card__number"
                             aria-hidden="true"
                         >
                             01
+                        </span>
+
+                        <div class="community-card__content">
+
+                            <p class="card__label">
+                                Learning &amp; Knowledge
+                            </p>
+
+                            <h3>
+                                Computing Students
+                            </h3>
+
+                            <p>
+                                A collaborative environment for
+                                computing students to share learning
+                                resources, practical skills,
+                                experiences, projects, and knowledge
+                                across Tanzania.
+                            </p>
+
+                            <div class="community-card__footer">
+
+                                <a
+                                    href="communities.html#computing-students"
+                                >
+                                    Explore Computing Students
+                                    <span aria-hidden="true">
+                                        →
+                                    </span>
+                                </a>
+
+                            </div>
+
                         </div>
-
-                        <p class="card-category">
-                            LEARNING &amp; KNOWLEDGE
-                        </p>
-
-                        <h3>
-                            Computing Students
-                        </h3>
-
-                        <p>
-                            A collaborative environment for
-                            computing students to share learning
-                            resources, practical skills, experiences,
-                            projects, and knowledge across Tanzania.
-                        </p>
-
-                        <a
-                            href="https://github.com/tanzania-computing-open-community/tanzania-computing-students"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Explore Computing Students
-                        </a>
 
                     </article>
 
@@ -382,37 +407,46 @@
 
                     <article class="community-card">
 
-                        <div
-                            class="card-index"
+                        <span
+                            class="community-card__number"
                             aria-hidden="true"
                         >
                             02
+                        </span>
+
+                        <div class="community-card__content">
+
+                            <p class="card__label">
+                                Security &amp; Research
+                            </p>
+
+                            <h3>
+                                Cybersecurity
+                            </h3>
+
+                            <p>
+                                A practical community for
+                                cybersecurity learning,
+                                laboratories, CTFs, defensive
+                                security, vulnerability research,
+                                security research, and responsible
+                                technical knowledge sharing.
+                            </p>
+
+                            <div class="community-card__footer">
+
+                                <a
+                                    href="communities.html#cybersecurity"
+                                >
+                                    Explore Cybersecurity
+                                    <span aria-hidden="true">
+                                        →
+                                    </span>
+                                </a>
+
+                            </div>
+
                         </div>
-
-                        <p class="card-category">
-                            SECURITY &amp; RESEARCH
-                        </p>
-
-                        <h3>
-                            Cybersecurity
-                        </h3>
-
-                        <p>
-                            A practical community for cybersecurity
-                            learning, laboratories, CTFs, defensive
-                            security, vulnerability research,
-                            security research, and responsible
-                            technical knowledge sharing.
-                        </p>
-
-                        <a
-                            href="https://github.com/tanzania-computing-open-community/tanzania-cybersecurity"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Explore Cybersecurity
-                        </a>
 
                     </article>
 
@@ -421,39 +455,60 @@
 
                     <article class="community-card">
 
-                        <div
-                            class="card-index"
+                        <span
+                            class="community-card__number"
                             aria-hidden="true"
                         >
                             03
+                        </span>
+
+                        <div class="community-card__content">
+
+                            <p class="card__label">
+                                Engineering &amp; Open Source
+                            </p>
+
+                            <h3>
+                                Software Development
+                            </h3>
+
+                            <p>
+                                A collaborative environment for
+                                software engineering, application
+                                development, open-source projects,
+                                testing, documentation,
+                                contribution, and long-term
+                                maintenance.
+                            </p>
+
+                            <div class="community-card__footer">
+
+                                <a
+                                    href="communities.html#software-development"
+                                >
+                                    Explore Software Development
+                                    <span aria-hidden="true">
+                                        →
+                                    </span>
+                                </a>
+
+                            </div>
+
                         </div>
 
-                        <p class="card-category">
-                            ENGINEERING &amp; OPEN SOURCE
-                        </p>
-
-                        <h3>
-                            Software Development
-                        </h3>
-
-                        <p>
-                            A collaborative environment for software
-                            engineering, application development,
-                            open-source projects, testing,
-                            documentation, contribution, and
-                            long-term project maintenance.
-                        </p>
-
-                        <a
-                            href="https://github.com/tanzania-computing-open-community/tanzania-software-development"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Explore Software Development
-                        </a>
-
                     </article>
+
+                </div>
+
+
+                <div class="section-heading" style="margin-top: 30px; margin-bottom: 0;">
+
+                    <a
+                        class="link"
+                        href="communities.html"
+                    >
+                        View all communities →
+                    </a>
 
                 </div>
 
@@ -463,12 +518,11 @@
 
 
         <!-- =================================================
-             COMMUNITY CYCLE
+             HOW TCOSC WORKS
              ================================================= -->
 
         <section
-            id="cycle"
-            class="section section-cycle"
+            class="section section--soft"
             aria-labelledby="cycle-title"
         >
 
@@ -476,7 +530,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         HOW TCOSC WORKS
                     </p>
 
@@ -493,54 +547,58 @@
                 </div>
 
 
-                <ol class="community-cycle">
+                <div class="cycle">
 
-                    <li>
-                        <span>01</span>
-                        <strong>Learn</strong>
-                    </li>
+                    <div class="cycle__grid">
 
-                    <li>
-                        <span>02</span>
-                        <strong>Practice</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">01</span>
+                            <strong>Learn</strong>
+                        </div>
 
-                    <li>
-                        <span>03</span>
-                        <strong>Build</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">02</span>
+                            <strong>Practice</strong>
+                        </div>
 
-                    <li>
-                        <span>04</span>
-                        <strong>Share</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">03</span>
+                            <strong>Build</strong>
+                        </div>
 
-                    <li>
-                        <span>05</span>
-                        <strong>Collaborate</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">04</span>
+                            <strong>Share</strong>
+                        </div>
 
-                    <li>
-                        <span>06</span>
-                        <strong>Contribute</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">05</span>
+                            <strong>Collaborate</strong>
+                        </div>
 
-                    <li>
-                        <span>07</span>
-                        <strong>Review</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">06</span>
+                            <strong>Contribute</strong>
+                        </div>
 
-                    <li>
-                        <span>08</span>
-                        <strong>Maintain</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">07</span>
+                            <strong>Review</strong>
+                        </div>
 
-                    <li>
-                        <span>09</span>
-                        <strong>Mentor</strong>
-                    </li>
+                        <div class="cycle__item">
+                            <span class="cycle__step">08</span>
+                            <strong>Maintain</strong>
+                        </div>
 
-                </ol>
+                        <div class="cycle__item">
+                            <span class="cycle__step">09</span>
+                            <strong>Mentor</strong>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -548,12 +606,11 @@
 
 
         <!-- =================================================
-             LEARN
+             LEARN PREVIEW
              ================================================= -->
 
         <section
-            id="learn"
-            class="section section-learn"
+            class="section"
             aria-labelledby="learn-title"
         >
 
@@ -561,7 +618,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         LEARN
                     </p>
 
@@ -578,9 +635,9 @@
                 </div>
 
 
-                <div class="skills-grid">
+                <div class="topic-grid">
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Programming</h3>
                         <p>
                             Languages, algorithms, data structures,
@@ -588,15 +645,15 @@
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Software Development</h3>
                         <p>
-                            Application development, architecture,
-                            testing, version control, and maintenance.
+                            Architecture, testing, version control,
+                            application development, and maintenance.
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Web Technologies</h3>
                         <p>
                             Web development, HTTP, APIs, browsers,
@@ -604,25 +661,25 @@
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Networking</h3>
                         <p>
-                            Network fundamentals, protocols,
-                            infrastructure, services, and practical
-                            network engineering.
+                            Protocols, infrastructure, services,
+                            network engineering, and practical
+                            networking.
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Systems</h3>
                         <p>
                             Operating systems, Linux, Windows,
-                            system administration, and computing
+                            administration, and computing
                             infrastructure.
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Cybersecurity</h3>
                         <p>
                             Security fundamentals, defensive
@@ -631,25 +688,35 @@
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Research</h3>
                         <p>
-                            Research methods, technical investigation,
-                            experimentation, documentation, and
-                            reproducible work.
+                            Investigation, experimentation,
+                            documentation, research methods, and
+                            reproducible technical work.
                         </p>
                     </article>
 
-                    <article class="skill-item">
+                    <article class="topic">
                         <h3>Open Source</h3>
                         <p>
                             Git, GitHub, contribution workflows,
-                            project collaboration, licensing, and
+                            licensing, collaboration, and
                             maintenance.
                         </p>
                     </article>
 
                 </div>
+
+
+                <p style="margin-top: 28px;">
+                    <a
+                        class="link"
+                        href="learn.html"
+                    >
+                        Explore learning resources →
+                    </a>
+                </p>
 
             </div>
 
@@ -657,12 +724,11 @@
 
 
         <!-- =================================================
-             PROJECTS
+             PROJECTS PREVIEW
              ================================================= -->
 
         <section
-            id="projects"
-            class="section section-projects"
+            class="section section--soft"
             aria-labelledby="projects-title"
         >
 
@@ -670,7 +736,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         BUILD
                     </p>
 
@@ -687,42 +753,88 @@
                 </div>
 
 
-                <div class="project-areas">
+                <div class="project-grid">
 
-                    <article>
-                        <h3>Student Projects</h3>
+                    <article class="project-card">
+
+                        <div class="project-card__meta">
+                            <span class="badge badge--green">
+                                Student Work
+                            </span>
+                        </div>
+
+                        <h3>
+                            Student Projects
+                        </h3>
+
                         <p>
                             Practical projects created by computing
                             students and contributors.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="projects.html#student-projects"
+                        >
+                            Explore projects →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Open-Source Software</h3>
+
+                    <article class="project-card">
+
+                        <div class="project-card__meta">
+                            <span class="badge badge--gold">
+                                Open Source
+                            </span>
+                        </div>
+
+                        <h3>
+                            Open-Source Software
+                        </h3>
+
                         <p>
                             Software developed collaboratively and
                             made available for open contribution.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="projects.html#open-source"
+                        >
+                            Explore software →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Community Projects</h3>
+
+                    <article class="project-card">
+
+                        <div class="project-card__meta">
+                            <span class="badge">
+                                Community
+                            </span>
+                        </div>
+
+                        <h3>
+                            Community Projects
+                        </h3>
+
                         <p>
                             Projects created to solve problems,
                             develop skills, and strengthen the
                             computing community.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="projects.html#community-projects"
+                        >
+                            Explore community projects →
+                        </a>
+
                     </article>
-
-                </div>
-
-
-                <div class="section-action">
-
-                    <p>
-                        Projects will be presented as genuine TCOSC
-                        projects become available.
-                    </p>
 
                 </div>
 
@@ -732,12 +844,11 @@
 
 
         <!-- =================================================
-             RESEARCH
+             RESEARCH PREVIEW
              ================================================= -->
 
         <section
-            id="research"
-            class="section section-research"
+            class="section"
             aria-labelledby="research-title"
         >
 
@@ -745,7 +856,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         RESEARCH
                     </p>
 
@@ -763,31 +874,88 @@
                 </div>
 
 
-                <div class="research-areas">
+                <div class="research-grid">
 
-                    <article>
-                        <h3>Research Projects</h3>
+                    <article class="research-card">
+
+                        <div class="research-card__meta">
+                            <span class="badge badge--green">
+                                Research
+                            </span>
+                        </div>
+
+                        <h3>
+                            Research Projects
+                        </h3>
+
                         <p>
                             Community research and technical
                             investigations.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="research.html#research-projects"
+                        >
+                            Explore research →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Final-Year Projects</h3>
+
+                    <article class="research-card">
+
+                        <div class="research-card__meta">
+                            <span class="badge badge--gold">
+                                Academic
+                            </span>
+                        </div>
+
+                        <h3>
+                            Final-Year Projects
+                        </h3>
+
                         <p>
                             Practical academic projects that can
-                            contribute knowledge beyond the classroom.
+                            contribute knowledge beyond the
+                            classroom.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="research.html#final-year-projects"
+                        >
+                            Explore projects →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Open Research</h3>
+
+                    <article class="research-card">
+
+                        <div class="research-card__meta">
+                            <span class="badge">
+                                Open Knowledge
+                            </span>
+                        </div>
+
+                        <h3>
+                            Open Research
+                        </h3>
+
                         <p>
                             Research materials, methodologies,
                             datasets, results, and supporting
                             technical work where appropriate.
                         </p>
+
+                        <a
+                            class="card__link"
+                            href="research.html#open-research"
+                        >
+                            Explore open research →
+                        </a>
+
                     </article>
 
                 </div>
@@ -798,12 +966,11 @@
 
 
         <!-- =================================================
-             COMMUNITY PARTICIPATION
+             COMMUNITY PREVIEW
              ================================================= -->
 
         <section
-            id="community"
-            class="section section-community"
+            class="section section--soft"
             aria-labelledby="community-title"
         >
 
@@ -811,7 +978,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         COMMUNITY
                     </p>
 
@@ -828,42 +995,83 @@
                 </div>
 
 
-                <div class="participation-grid">
+                <div class="card-grid">
 
-                    <article>
-                        <h3>Contributors</h3>
-                        <p>
-                            People who improve projects, documentation,
-                            research, learning resources, and community
-                            infrastructure.
+                    <article class="card card--featured">
+
+                        <p class="card__label">
+                            PEOPLE
                         </p>
+
+                        <h3>
+                            Contributors
+                        </h3>
+
+                        <p>
+                            People who improve projects,
+                            documentation, research, learning
+                            resources, and community infrastructure.
+                        </p>
+
+                        <a
+                            class="card__link"
+                            href="community.html#contributors"
+                        >
+                            Meet the contributor community →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Mentorship</h3>
-                        <p>
-                            Experienced contributors helping learners
-                            and new contributors develop practical
-                            technical skills.
+
+                    <article class="card">
+
+                        <p class="card__label">
+                            GUIDANCE
                         </p>
+
+                        <h3>
+                            Mentorship
+                        </h3>
+
+                        <p>
+                            Experienced contributors helping
+                            learners and new contributors develop
+                            practical technical skills.
+                        </p>
+
+                        <a
+                            class="card__link"
+                            href="community.html#mentorship"
+                        >
+                            Explore mentorship →
+                        </a>
+
                     </article>
 
-                    <article>
-                        <h3>Institutions</h3>
+
+                    <article class="card">
+
+                        <p class="card__label">
+                            PARTICIPATION
+                        </p>
+
+                        <h3>
+                            Institutions
+                        </h3>
+
                         <p>
                             Universities, colleges, departments,
                             student communities, and research groups
                             participating in open collaboration.
                         </p>
-                    </article>
 
-                    <article>
-                        <h3>Events</h3>
-                        <p>
-                            Workshops, technical sessions, CTFs,
-                            research activities, community meetings,
-                            and other genuine TCOSC activities.
-                        </p>
+                        <a
+                            class="card__link"
+                            href="community.html#institutions"
+                        >
+                            Explore institutional participation →
+                        </a>
+
                     </article>
 
                 </div>
@@ -874,22 +1082,21 @@
 
 
         <!-- =================================================
-             CONTRIBUTION
+             CONTRIBUTION CTA
              ================================================= -->
 
         <section
-            id="contribute"
-            class="section section-contribute"
+            class="section section--featured"
             aria-labelledby="contribute-title"
         >
 
             <div class="container">
 
-                <div class="contribute-content">
+                <div class="github-panel">
 
-                    <div>
+                    <div class="github-panel__content">
 
-                        <p class="eyebrow">
+                        <p class="section-heading__eyebrow">
                             PARTICIPATE
                         </p>
 
@@ -905,54 +1112,38 @@
                             and help improve the community.
                         </p>
 
-                    </div>
 
+                        <div class="hero__actions">
 
-                    <ol class="contribution-path">
+                            <a
+                                href="contribute.html"
+                                class="button button--primary"
+                            >
+                                Start Contributing
+                                <span
+                                    class="button__arrow"
+                                    aria-hidden="true"
+                                >
+                                    →
+                                </span>
+                            </a>
 
-                        <li>
-                            <span>01</span>
-                            Explore TCOSC
-                        </li>
+                            <a
+                                href="https://github.com/tanzania-computing-open-community"
+                                class="button button--secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Visit TCOSC on GitHub
+                                <span
+                                    class="button__arrow"
+                                    aria-hidden="true"
+                                >
+                                    →
+                                </span>
+                            </a>
 
-                        <li>
-                            <span>02</span>
-                            Choose an area
-                        </li>
-
-                        <li>
-                            <span>03</span>
-                            Find an opportunity
-                        </li>
-
-                        <li>
-                            <span>04</span>
-                            Contribute
-                        </li>
-
-                        <li>
-                            <span>05</span>
-                            Review &amp; improve
-                        </li>
-
-                        <li>
-                            <span>06</span>
-                            Maintain &amp; mentor
-                        </li>
-
-                    </ol>
-
-
-                    <div class="contribute-action">
-
-                        <a
-                            href="https://github.com/tanzania-computing-open-community"
-                            class="button button-primary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Visit TCOSC on GitHub
-                        </a>
+                        </div>
 
                     </div>
 
@@ -964,12 +1155,11 @@
 
 
         <!-- =================================================
-             CURRENT ECOSYSTEM
+             GITHUB ECOSYSTEM
              ================================================= -->
 
         <section
-            id="github"
-            class="section section-github"
+            class="section"
             aria-labelledby="github-title"
         >
 
@@ -977,7 +1167,7 @@
 
                 <div class="section-heading">
 
-                    <p class="eyebrow">
+                    <p class="section-heading__eyebrow">
                         OPEN SOURCE ECOSYSTEM
                     </p>
 
@@ -986,9 +1176,10 @@
                     </h2>
 
                     <p>
-                        The website is the public front door of TCOSC.
-                        GitHub is where the community collaborates,
-                        develops projects, shares work, and contributes.
+                        The website is the public front door of
+                        TCOSC. GitHub is where the community
+                        collaborates, develops projects, shares work,
+                        and contributes.
                     </p>
 
                 </div>
@@ -996,27 +1187,36 @@
 
                 <div class="repository-grid">
 
+
+                    <!-- ORGANIZATION -->
+
                     <a
                         href="https://github.com/tanzania-computing-open-community"
-                        class="repository-card repository-card-featured"
+                        class="repository-card"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
 
-                        <span>
-                            ORGANIZATION
+                        <span class="repository-card__type">
+                            Organization
                         </span>
 
-                        <strong>
+                        <h3>
                             TCOSC
-                        </strong>
+                        </h3>
 
-                        <small>
+                        <p>
                             Tanzania Computing Open Source Community
-                        </small>
+                        </p>
+
+                        <span class="repository-card__arrow">
+                            Open GitHub →
+                        </span>
 
                     </a>
 
+
+                    <!-- STUDENTS -->
 
                     <a
                         href="https://github.com/tanzania-computing-open-community/tanzania-computing-students"
@@ -1025,16 +1225,27 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>
-                            COMMUNITY
+                        <span class="repository-card__type">
+                            Community Repository
                         </span>
 
-                        <strong>
+                        <h3>
                             Computing Students
-                        </strong>
+                        </h3>
+
+                        <p>
+                            Learning resources, skills, experiences,
+                            and student collaboration.
+                        </p>
+
+                        <span class="repository-card__arrow">
+                            Open repository →
+                        </span>
 
                     </a>
 
+
+                    <!-- CYBERSECURITY -->
 
                     <a
                         href="https://github.com/tanzania-computing-open-community/tanzania-cybersecurity"
@@ -1043,16 +1254,28 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>
-                            COMMUNITY
+                        <span class="repository-card__type">
+                            Community Repository
                         </span>
 
-                        <strong>
+                        <h3>
                             Cybersecurity
-                        </strong>
+                        </h3>
+
+                        <p>
+                            Security learning, laboratories,
+                            research, CTFs, and responsible
+                            technical work.
+                        </p>
+
+                        <span class="repository-card__arrow">
+                            Open repository →
+                        </span>
 
                     </a>
 
+
+                    <!-- SOFTWARE -->
 
                     <a
                         href="https://github.com/tanzania-computing-open-community/tanzania-software-development"
@@ -1061,13 +1284,22 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>
-                            COMMUNITY
+                        <span class="repository-card__type">
+                            Community Repository
                         </span>
 
-                        <strong>
+                        <h3>
                             Software Development
-                        </strong>
+                        </h3>
+
+                        <p>
+                            Software engineering, open-source
+                            development, testing, and maintenance.
+                        </p>
+
+                        <span class="repository-card__arrow">
+                            Open repository →
+                        </span>
 
                     </a>
 
@@ -1081,28 +1313,24 @@
 
 
     <!-- =====================================================
-         SITE FOOTER
+         FOOTER
          ===================================================== -->
 
     <footer class="site-footer">
 
-        <div class="container footer-grid">
+        <div class="container site-footer__inner">
 
 
-            <div class="footer-brand">
+            <!-- BRAND -->
 
-                <a
-                    href="index.html"
-                    class="footer-brand-name"
-                >
+            <div>
+
+                <h2>
                     TCOSC
-                </a>
+                </h2>
 
                 <p>
-                    Tanzania Computing Open Source Community
-                </p>
-
-                <p>
+                    Tanzania Computing Open Source Community.
                     Connecting Tanzania's computing community
                     through open source.
                 </p>
@@ -1110,41 +1338,37 @@
             </div>
 
 
-            <div class="footer-navigation">
+            <!-- EXPLORE -->
 
-                <h2>
+            <div>
+
+                <h3>
                     Explore
-                </h2>
+                </h3>
 
                 <ul>
 
                     <li>
-                        <a href="#about">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
                             About
                         </a>
                     </li>
 
                     <li>
-                        <a href="#communities">
+                        <a href="communities.html">
                             Communities
                         </a>
                     </li>
 
                     <li>
-                        <a href="#learn">
+                        <a href="learn.html">
                             Learn
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#projects">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#research">
-                            Research
                         </a>
                     </li>
 
@@ -1153,25 +1377,54 @@
             </div>
 
 
-            <div class="footer-navigation">
+            <!-- KNOWLEDGE -->
 
-                <h2>
-                    Participate
-                </h2>
+            <div>
+
+                <h3>
+                    Knowledge
+                </h3>
 
                 <ul>
 
                     <li>
-                        <a href="#community">
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="research.html">
+                            Research
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="community.html">
                             Community
                         </a>
                     </li>
 
                     <li>
-                        <a href="#contribute">
+                        <a href="contribute.html">
                             Contribute
                         </a>
                     </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- GITHUB -->
+
+            <div>
+
+                <h3>
+                    Open Source
+                </h3>
+
+                <ul>
 
                     <li>
                         <a
@@ -1179,7 +1432,37 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            GitHub
+                            GitHub Organization
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/tanzania-computing-open-community/tanzania-computing-students"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Computing Students
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/tanzania-computing-open-community/tanzania-cybersecurity"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Cybersecurity
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/tanzania-computing-open-community/tanzania-software-development"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Software Development
                         </a>
                     </li>
 
@@ -1187,11 +1470,10 @@
 
             </div>
 
-
         </div>
 
 
-        <div class="container footer-bottom">
+        <div class="container site-footer__bottom">
 
             <p>
                 &copy; 2026 Tanzania Computing Open Source Community.
@@ -1204,8 +1486,9 @@
         </div>
 
     </footer>
-    
-    <script src="script.js"></script> 
-    
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
