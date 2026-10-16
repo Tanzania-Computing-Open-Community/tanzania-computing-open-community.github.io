@@ -1,14 +1,6 @@
-/* =========================================================
-   TCOSC — Tanzania Computing Open Source Community
-   Global Website Behaviour
-   ========================================================= */
-
 (() => {
     "use strict";
 
-    /* ---------------------------------------------------------
-       01. Current Page Navigation
-       --------------------------------------------------------- */
 
     const currentPath = window.location.pathname
         .split("/")
@@ -51,10 +43,6 @@
     });
 
 
-    /* ---------------------------------------------------------
-       02. Header Scroll State
-       --------------------------------------------------------- */
-
     const header = document.querySelector(".site-header");
 
     const updateHeaderState = () => {
@@ -77,10 +65,6 @@
         { passive: true }
     );
 
-
-    /* ---------------------------------------------------------
-       03. External Link Protection
-       --------------------------------------------------------- */
 
     const links = document.querySelectorAll("a[href]");
 
@@ -107,10 +91,6 @@
     });
 
 
-    /* ---------------------------------------------------------
-       04. Keyboard-Friendly External Link Indication
-       --------------------------------------------------------- */
-
     links.forEach((link) => {
         const href = link.getAttribute("href");
 
@@ -130,10 +110,6 @@
     });
 
 
-    /* ---------------------------------------------------------
-       05. Prevent Broken Empty Links
-       --------------------------------------------------------- */
-
     document.addEventListener("click", (event) => {
         const link = event.target.closest("a");
 
@@ -148,10 +124,6 @@
         }
     });
 
-
-    /* ---------------------------------------------------------
-       06. Reduced Motion Awareness
-       --------------------------------------------------------- */
 
     const reducedMotionQuery = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
@@ -174,21 +146,74 @@
     }
 
 
-    /* ---------------------------------------------------------
-       07. Page Ready State
-       --------------------------------------------------------- */
-
     document.documentElement.classList.add("js-enabled");
 
 
-    const pageAnimation = document.querySelectorAll(
+    const backgroundVideos = document.querySelectorAll(
         ".page-background__video, .github-panel__video"
     );
 
+    const ensureBackgroundVideos = () => {
+        let allPlaying = true;
+
+        backgroundVideos.forEach((video) => {
+            video.muted = true;
+            video.defaultMuted = true;
+            video.playsInline = true;
+            video.setAttribute("playsinline", "");
+
+            if (video.paused) {
+                allPlaying = false;
+
+                const playing = video.play();
+
+                if (playing && typeof playing.catch === "function") {
+                    playing.catch(() => {});
+                }
+            }
+        });
+
+        return allPlaying;
+    };
+
+    const startPlaybackRetries = () => {
+        let retries = 0;
+
+        if (ensureBackgroundVideos()) {
+            return;
+        }
+
+        const timer = window.setInterval(() => {
+            retries += 1;
+
+            if (ensureBackgroundVideos() || retries > 20) {
+                window.clearInterval(timer);
+            }
+        }, 1000);
+    };
+
     if (reducedMotionQuery.matches) {
-        pageAnimation.forEach((video) => {
+        backgroundVideos.forEach((video) => {
             video.removeAttribute("autoplay");
             video.pause();
+        });
+    } else {
+        startPlaybackRetries();
+
+        ["touchstart", "touchend", "click", "keydown"].forEach(
+            (eventName) => {
+                window.addEventListener(
+                    eventName,
+                    ensureBackgroundVideos,
+                    { passive: true }
+                );
+            }
+        );
+
+        document.addEventListener("visibilitychange", () => {
+            if (!document.hidden) {
+                startPlaybackRetries();
+            }
         });
     }
 
