@@ -180,4 +180,16 @@
 
     document.documentElement.classList.add("js-enabled");
 
+
+    const pageAnimation = document.querySelectorAll(
+        ".page-background__video, .github-panel__video"
+    );
+
+    if (reducedMotionQuery.matches) {
+        pageAnimation.forEach((video) => {
+            video.removeAttribute("autoplay");
+            video.pause();
+        });
+    }
+
 })();

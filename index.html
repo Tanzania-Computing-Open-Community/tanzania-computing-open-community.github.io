@@ -39,6 +39,26 @@
     >
 
     <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/favicon-32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="assets/favicon-192.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/apple-touch-icon.png"
+    >
+
+    <link
         rel="stylesheet"
         href="styles.css"
     >
@@ -49,6 +69,30 @@
 </head>
 
 <body>
+
+
+    <div
+        class="page-background"
+        aria-hidden="true"
+    >
+
+        <video
+            class="page-background__video"
+            poster="assets/tcosc-intro-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        >
+            <source
+                src="assets/tcosc-intro.mp4"
+                type="video/mp4"
+            >
+        </video>
+
+    </div>
+
 
     <!-- =====================================================
          ACCESSIBILITY
@@ -78,11 +122,14 @@
                 aria-label="TCOSC home"
             >
 
-                <span
-                    class="site-brand__mark"
-                    aria-hidden="true"
-                >
-                    T
+                <span class="site-brand__mark" aria-hidden="true">
+                    <img
+                        src="assets/tcosc-logo.png"
+                        alt=""
+                        width="38"
+                        height="38"
+                        decoding="async"
+                    >
                 </span>
 
                 <span class="site-brand__text">
@@ -1145,6 +1192,26 @@
 
                         </div>
 
+                        <div class="github-panel__media">
+
+                            <video
+                                class="github-panel__video"
+                                poster="assets/tcosc-intro-poster.jpg"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                aria-label="Tanzania Computing Open Source Community logo animation"
+                            >
+                                <source
+                                    src="assets/tcosc-intro.mp4"
+                                    type="video/mp4"
+                                >
+                            </video>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -1463,6 +1530,38 @@
                             rel="noopener noreferrer"
                         >
                             Software Development
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Connect
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a
+                            href="https://whatsapp.com/channel/0029VbEFpmq3WHTeCVn0MK2S"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            WhatsApp Channel
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@TCOSCOfficial"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            YouTube
                         </a>
                     </li>
 

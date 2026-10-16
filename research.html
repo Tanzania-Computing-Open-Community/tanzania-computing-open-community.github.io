@@ -11,17 +11,69 @@
 
     <title>Research | TCOSC</title>
 
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/favicon-32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="assets/favicon-192.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/apple-touch-icon.png"
+    >
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
+
+    <div
+        class="page-background"
+        aria-hidden="true"
+    >
+
+        <video
+            class="page-background__video"
+            poster="assets/tcosc-intro-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        >
+            <source
+                src="assets/tcosc-intro.mp4"
+                type="video/mp4"
+            >
+        </video>
+
+    </div>
+
+
 <header class="site-header">
     <div class="container site-header__inner">
 
         <a class="site-brand" href="index.html" aria-label="TCOSC home">
-            <span class="site-brand__mark">T</span>
+            <span class="site-brand__mark" aria-hidden="true">
+                <img
+                    src="assets/tcosc-logo.png"
+                    alt=""
+                    width="38"
+                    height="38"
+                    decoding="async"
+                >
+            </span>
 
             <span class="site-brand__text">
                 <span class="site-brand__name">TCOSC</span>
@@ -1200,6 +1252,38 @@
                 </ul>
 
             </div>
+
+        <div>
+
+            <h3>
+                Connect
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a
+                        href="https://whatsapp.com/channel/0029VbEFpmq3WHTeCVn0MK2S"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp Channel
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.youtube.com/@TCOSCOfficial"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YouTube
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
 
     </div>
 
